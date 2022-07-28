@@ -4,3 +4,4 @@ declare type LabelValueOptions = {
   [key: string]: string | number | boolean
 }[]
 
+declare module 'build'
