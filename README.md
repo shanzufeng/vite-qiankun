@@ -1,4 +1,4 @@
-# workspaces
+# vite-qiankun
 
 ## Project setup
 ```
