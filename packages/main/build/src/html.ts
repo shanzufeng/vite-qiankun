@@ -4,7 +4,7 @@ export function configHtmlPlugin() {
   return createHtmlPlugin({
     inject: {
       data: {
-        title: '我是child-1项目'
+        title: '我是main项目'
       },
       tags: [
         {
