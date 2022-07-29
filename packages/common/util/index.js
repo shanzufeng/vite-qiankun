@@ -1,8 +1,12 @@
-
 const fun = ()=>{
-  console.log('我是一个fun方法')
+
+}
+
+const fun2 = ()=>{
+  console.log('我是一个fun方法2266')
 }
 
 export default {
-  fun
+  fun,
+  fun2
 }

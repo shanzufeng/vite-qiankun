@@ -6,6 +6,7 @@
     "install": "npm-run-all --parallel install:*",
     "install:main": "cd packages/main && yarn install",
     "install:child-1": "cd packages/child-1 && yarn install",
+    "install:common": "cd packages/common && npm install",
     "start": "npm-run-all --parallel start:*",
     "start:main": "cd packages/main && npm run dev",
     "start:child-1": "cd packages/child-1 && npm run dev",
@@ -13,8 +14,9 @@
     "build:child-1": "cd packages/child-1 && npm run build",
     "build:main": "cd packages/main && npm run build",
     "clean": "npm-run-all --parallel clean:*",
-    "clean:child-1": "cd packages/child-1 && rimraf node_modules",
-    "clean:main": "cd packages/main && rimraf node_modules"
+    "clean:child-1": "cd packages/child-1 && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
+    "clean:main": "cd packages/main && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
+    "clean:common": "cd packages/common && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules"
   },
   "dependencies": {
     "core-js": "^3.6.4",
