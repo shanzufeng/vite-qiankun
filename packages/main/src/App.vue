@@ -8,6 +8,9 @@ const user = computed(() => store.getGlobalState('user'))
 <template>
   <div>我是主应用的头部, 看看下面我的状态, 是不是</div>
   <div>{{ user.name }}</div>
+  <div>
+    <el-button>Default</el-button>
+  </div>
   <!-- 可以放到这里,也可以放到对应子路由的页面里面位置不重要 -->
   <div id="child-viewport"></div>
   <router-view></router-view>

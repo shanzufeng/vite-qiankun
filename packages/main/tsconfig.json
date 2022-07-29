@@ -13,11 +13,12 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "typeRoots": ["./types"],
+    "types": ["element-plus/global"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "vite.config.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts"],
+  "include": ["src/**/*.ts", "build/**/*.ts", "vite.config.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

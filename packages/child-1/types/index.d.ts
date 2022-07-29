@@ -10,3 +10,4 @@ interface Window {
 }
 
 declare module 'common'
+declare module 'build'
