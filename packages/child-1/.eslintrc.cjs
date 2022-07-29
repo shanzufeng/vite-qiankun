@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     "vue/multi-word-component-names": 0,
     "@typescript-eslint/no-explicit-any": 0, // 可以使用any
-    "no-undef": 0
+    "no-undef": 0,
+    "@typescript-eslint/ban-ts-comment": 0
   },
 }
