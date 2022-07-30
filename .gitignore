@@ -14,5 +14,10 @@ packages/main/node_modules
 packages/main/package-lock.json
 packages/main/yarn.lock
 
+packages/child-2/dist
+packages/child-2/node_modules
+packages/child-2/package-lock.json
+packages/child-2/yarn.lock
+
 
 
