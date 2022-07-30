@@ -36,7 +36,7 @@ const fun = (instance: any) => {
       }
     ]
   } as any)
-  setDefaultMountApp(defaultActiveUrl)
+  setDefaultMountApp('/child2')
   start()
 }
 

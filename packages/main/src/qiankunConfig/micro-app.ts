@@ -5,6 +5,11 @@ const microApps = [
     name: childName,
     entry: import.meta.env.VITE_CHILD_ENTRY,
     activeRule
+  },
+  {
+    name: 'child2',
+    entry: import.meta.env.VITE_CHILD_HTML_ENTRY,
+    activeRule: '/child2'
   }
 ]
 

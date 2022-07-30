@@ -1,8 +1,9 @@
 import { createStore } from 'vuex'
 
-const defaultState = {
+const defaultState: any = {
   count: 22,
   user: {
+    current: 'main',
     name: '主应用的name'
   }
 }
@@ -15,6 +16,10 @@ export default createStore({
   mutations: {
     increment(state: typeof defaultState) {
       state.count++
+    },
+    setCurrent(state, val) {
+      console.log(state)
+      state.user.current = val
     }
   },
   actions: {

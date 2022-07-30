@@ -1,0 +1,15 @@
+{
+  "name": "child-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "shanzufeng",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env PUBLIC_PATH=/ http-server ./ -p 6061 --cors",
+    "build": "bash ./scripts/build.sh"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "http-server": "^14.1.1"
+  }
+}
