@@ -11,3 +11,4 @@ interface Window {
 
 declare module 'common'
 declare module 'build'
+declare module 'VueParticles'

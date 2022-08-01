@@ -5,3 +5,4 @@ declare type LabelValueOptions = {
 }[]
 
 declare module 'build'
+declare module 'vue-particles'

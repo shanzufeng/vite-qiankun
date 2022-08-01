@@ -2,7 +2,6 @@
 yarn.lock
 node_modules
 dist
-scripts
 
 packages/child-1/dist
 packages/child-1/node_modules

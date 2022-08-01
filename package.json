@@ -17,10 +17,11 @@
     "build:child-2": "cd packages/child-2 && npm run build",
     "build:main": "cd packages/main && npm run build",
     "clean": "npm-run-all --parallel clean:*",
-    "clean:child-1": "cd packages/child-1 && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
-    "clean:child-2": "cd packages/child-2 && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
-    "clean:main": "cd packages/main && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
-    "clean:common": "cd packages/common && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules"
+    "clean:child-1": "cd packages/child-1 && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules rimraf dist",
+    "clean:child-2": "cd packages/child-2 && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules rimraf dist",
+    "clean:main": "cd packages/main && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules rimraf dist",
+    "clean:common": "cd packages/common && rimraf yarn.lock && rimraf package.lock.json && rimraf node_modules",
+    "clean:qiankun": "rimraf dist && rimraf node_modules"
   },
   "dependencies": {
     "core-js": "^3.6.4",

@@ -36,8 +36,12 @@ const fun = (instance: any) => {
       }
     ]
   } as any)
-  setDefaultMountApp('/child2')
-  start()
+  // setDefaultMountApp('/child2')
+  start({
+    sandbox: {
+      strictStyleIsolation: true
+    }
+  })
 }
 
 export default fun

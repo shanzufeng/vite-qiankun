@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
-import './style.css'
 import App from './App.vue'
 import store from './store'
 import { router, createRouterFun, destroyRouterFun } from './router'

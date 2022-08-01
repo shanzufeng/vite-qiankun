@@ -1,12 +1,15 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '@/views/Home.vue'
 import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/child_home'
+  },
+  {
+    path: '/child_home',
+    name: 'child_home',
+    component: () => import('@/views/Home.vue')
   },
   {
     path: '/about',
